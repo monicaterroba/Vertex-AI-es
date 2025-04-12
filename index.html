@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vertex AI - Montek.ai</title>
+  <style>
+    :root {
+      --color-background: #000000;
+      --color-text: #FFFFFF;
+      --color-accent: #ec4899;
+      --color-accent-hover: #db2777;
+      --color-soft: #EDF3FB;
+      --color-cardText: #000000;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background-color: var(--color-background);
+      color: var(--color-text);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: white;
+      color: black;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    section.card {
+      background-color: var(--color-soft);
+      color: var(--color-cardText);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      background-color: var(--color-accent);
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 9999px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin: 40px auto 20px;
+      display: block;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: var(--color-accent-hover);
+    }
+
+    .footer-in-pdf {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #333;
+      margin-top: 60px;
+      padding-top: 30px;
+      border-top: 1px solid #999;
+    }
+
+    footer.screen-only {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--color-text);
+      border-top: 1px solid #444;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    footer.screen-only a {
+      color: var(--color-accent);
+      text-decoration: underline;
+    }
+
+    @media print {
+      button,
+      footer.screen-only {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container" id="contenido-infografia">
+    <header>
+      <h1>¿Y si entrenar y desplegar modelos de IA no fuera cosa de genios? 🚀</h1>
+      <p>Eso es exactamente lo que promete <strong>Vertex AI</strong> — y sí, lo cumple.</p>
+    </header>
+
+    <section class="card">
+      <h2>1. Sube tus datos a BigQuery o Cloud Storage</h2>
+      <p>Asegúrate de que estén limpios y bien organizados. Recuerda: mejor data, mejor modelo.</p>
+    </section>
+
+    <section class="card">
+      <h2>2. Crea un dataset en Vertex AI</h2>
+      <p>Elige el tipo (imagen, texto, tabular, video) y conéctalo a tu fuente de datos. Es como crear tu carpeta de proyecto.</p>
+    </section>
+
+    <section class="card">
+      <h2>3. Entrena un modelo (AutoML o personalizado)</h2>
+      <p>¿Eres principiante? AutoML es una maravilla: se encarga de todo.<br>¿Tienes experiencia? Sube tu propio modelo y ajústalo como quieras.</p>
+    </section>
+
+    <section class="card">
+      <h2>4. Evalúa y prueba</h2>
+      <p>Tendrás paneles claros con métricas clave: precisión, exactitud, matriz de confusión… todo a la vista.</p>
+    </section>
+
+    <section class="card">
+      <h2>5. Despliega con un clic</h2>
+      <p>¿Quieres predicciones en tiempo real o por lotes? Vertex te lo pone fácil.</p>
+    </section>
+
+    <section class="card">
+      <h2>☁️ Escalabilidad con Google Cloud</h2>
+      <p>Al estar integrado con Google Cloud, tienes escalabilidad y seguridad de serie.</p>
+    </section>
+
+    <section class="card">
+      <h2>💡 Inspiración Montek.ai</h2>
+      <p>Me encantan estas herramientas que acercan la IA a más personas.<br>¿Te gustaría ver cómo la estamos usando en <strong>Montek.ai</strong>? Muy pronto lo comparto.</p>
+    </section>
+
+    <section class="card">
+      <h2>👩‍💻 Autora</h2>
+      <p><strong>Monica Flores Terroba</strong><br>
+      AI & Data Scientist | Founder en <a href="https://montek.ai" target="_blank">Montek.ai</a></p>
+      <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/monica-flores-terroba-86040111a/" target="_blank">linkedin.com/in/monica-flores-terroba</a></p>
+    </section>
+
+    <section class="card">
+      <h2>🛡️ Licencia</h2>
+      <p>© 2025 Montek Technologies LLC. Todos los derechos reservados.<br>
+      Este proyecto es solo para fines educativos y demostrativos.</p>
+    </section>
+
+    <section class="card">
+      <h2>❤️ ¿Te gustó?</h2>
+      <ul>
+        <li>⭐ Sígueme para más consejos como este</li>
+      </ul>
+    </section>
+
+    <div class="footer-in-pdf">
+      By Monica Flores Terroba © 2025 Montek Technologies LLC. All rights reserved.
+      <br>
+      <a href="https://montek.ai" target="_blank">montek.ai</a>
+    </div>
+  </div>
+
+  <button onclick="window.print()">Descargar como PDF</button>
+
+  <footer class="screen-only">
+    By Monica Flores Terroba © 2025 Montek Technologies LLC. All rights reserved. <br>
+    <a href="https://montek.ai" target="_blank">montek.ai</a>
+  </footer>
+
+</body>
+</html>
